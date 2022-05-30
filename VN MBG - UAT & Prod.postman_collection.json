@@ -1,0 +1,258 @@
+{
+	"info": {
+		"_postman_id": "0daf010b-885c-4381-b022-dc69e44d3dae",
+		"name": "VN MBG - UAT & Prod",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20342732"
+	},
+	"item": [
+		{
+			"name": "Login Prod Asia",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"admindev\",\r\n    \"password\": \"Ams@admindev14\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz.bolttech.asia:8081/login/permissions",
+					"protocol": "https",
+					"host": [
+						"crmz",
+						"bolttech",
+						"asia"
+					],
+					"port": "8081",
+					"path": [
+						"login",
+						"permissions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login UAT Asia",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"victor.teh\",\r\n    \"password\": \"@MyZero22\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8081/login/permissions",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8081",
+					"path": [
+						"login",
+						"permissions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VN - VN_FPT_EW_LP_1Y",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUzNjE0OTMxLCJpYXQiOjE2NTM1Mjg1MzF9.8mcVJIzh1-0roPeshYt63AVRo6yuM2gmXBczKShjz05Ut2-xncSh1dAKsXOZKfpw1OVlJ7XZGgmsH-k20qk58A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"countryCode\": \"VN\",\r\n    \"creationTime\": \"\",\r\n    \"coverage\": \"\",\r\n    \"custAddress\": {\r\n        \"address1\": \"12\",\r\n        \"address2\": \"\",\r\n        \"city\": \"Delhi\",\r\n        \"countryCode\": \"VN\",\r\n        \"postalCode\": \"10602\",\r\n        \"state\": \"\"\r\n    },\r\n    \"custMobileNumber\": \"84563547221\",\r\n    \"customerEmail\": \"victorteh@altecflex.com\",\r\n    \"customerLastName\": \"ing\",\r\n    \"customerName\": \"Trial\",\r\n    \"deviceMake\": \"Vivo\",\r\n    \"deviceModel\": \"Smartphone - Vivo 1714\",\r\n    \"orderId\": \"998774675593\",\r\n    \"policyIMEINumber\": \"989397538893616\",\r\n    \"policyStartDate\": \"26/05/2022\",\r\n    \"policyPurchaseDate\": \"26/05/2022\",\r\n    \"deviceDiagnosticUrl\": [],\r\n    \"deviceRRP\": \"37000000\",\r\n    \"partnerProductId\": \"\",\r\n    \"productCode\": \"VN_FPT_EW_LP_1Y\",\r\n    \"deviceActivationDate\": \"2022-05-16T10:27:33.000+02:00\",\r\n    \"partnerId\": \"VNFPTCOTELNA01\",\r\n    \"productName\": \"FPT 1 Year EW - Laptops\",\r\n    \"deviceSoldDate\": \"26/05/2022\",\r\n    \"location\": \"VN\",\r\n    \"storeCode\": \"12051\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VN - VN_FPT_ADLD_WR_6M",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUzNjE0OTMxLCJpYXQiOjE2NTM1Mjg1MzF9.8mcVJIzh1-0roPeshYt63AVRo6yuM2gmXBczKShjz05Ut2-xncSh1dAKsXOZKfpw1OVlJ7XZGgmsH-k20qk58A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"countryCode\": \"VN\",\r\n    \"creationTime\": \"\",\r\n    \"coverage\": \"\",\r\n    \"custAddress\": {\r\n        \"address1\": \"12\",\r\n        \"address2\": \"\",\r\n        \"city\": \"Delhi\",\r\n        \"countryCode\": \"VN\",\r\n        \"postalCode\": \"10602\",\r\n        \"state\": \"\"\r\n    },\r\n    \"custMobileNumber\": \"84563547222\",\r\n    \"customerEmail\": \"victorteh@altecflex.com\",\r\n    \"customerLastName\": \"DATAAA\",\r\n    \"customerName\": \"TEST\",\r\n    \"deviceMake\": \"Vivo\",\r\n    \"deviceModel\": \"Smartphone - Vivo 1714\",\r\n    \"orderId\": \"998774675593\",\r\n    \"policyIMEINumber\": \"447490341821910\",\r\n    \"policyStartDate\": \"26/05/2022\",\r\n    \"policyPurchaseDate\": \"26/05/2022\",\r\n    \"deviceDiagnosticUrl\": [],\r\n    \"deviceRRP\": \"37000000\",\r\n    \"partnerProductId\": \"\",\r\n    \"productCode\": \"VN_FPT_ADLD_WR_6M\",\r\n    \"deviceActivationDate\": \"2022-05-16T10:27:33.000+02:00\",\r\n    \"partnerId\": \"VNFPTCOTELNA01\",\r\n    \"productName\": \"FPT 6 Months ADLD - Wearables\",\r\n    \"deviceSoldDate\": \"26/05/2022\",\r\n    \"location\": \"VN\",\r\n    \"storeCode\": \"12051\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VN - VN_FPT_ADLD_WR_1Y",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUzNjE0OTMxLCJpYXQiOjE2NTM1Mjg1MzF9.8mcVJIzh1-0roPeshYt63AVRo6yuM2gmXBczKShjz05Ut2-xncSh1dAKsXOZKfpw1OVlJ7XZGgmsH-k20qk58A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"countryCode\": \"VN\",\r\n    \"creationTime\": \"\",\r\n    \"coverage\": \"\",\r\n    \"custAddress\": {\r\n        \"address1\": \"12\",\r\n        \"address2\": \"\",\r\n        \"city\": \"Delhi\",\r\n        \"countryCode\": \"VN\",\r\n        \"postalCode\": \"10602\",\r\n        \"state\": \"\"\r\n    },\r\n    \"custMobileNumber\": \"84563547223\",\r\n    \"customerEmail\": \"victorteh@altecflex.com\",\r\n    \"customerLastName\": \"ing\",\r\n    \"customerName\": \"Trial\",\r\n    \"deviceMake\": \"Vivo\",\r\n    \"deviceModel\": \"Smartphone - Vivo 1714\",\r\n    \"orderId\": \"998774675593\",\r\n    \"policyIMEINumber\": \"495534283981850\",\r\n    \"policyStartDate\": \"26/05/2022\",\r\n    \"policyPurchaseDate\": \"26/05/2022\",\r\n    \"deviceDiagnoticUrl\": [],\r\n    \"deviceRRP\": \"37000000\",\r\n    \"partnerProductId\": \"\",\r\n    \"productCode\": \"VN_FPT_ADLD_WR_1Y\",\r\n    \"deviceActivationDate\": \"2022-05-16T10:27:33.000+02:00\",\r\n    \"partnerId\": \"VNFPTCOTELNA01\",\r\n    \"productName\": \"FPT 1 Year ADLD - Wearables\",\r\n    \"deviceSoldDate\": \"18/05/2022\",\r\n    \"location\": \"VN\",\r\n    \"storeCode\": \"12051\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VN - VN_FPT_ADLD_LP_6M",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUzNjE0OTMxLCJpYXQiOjE2NTM1Mjg1MzF9.8mcVJIzh1-0roPeshYt63AVRo6yuM2gmXBczKShjz05Ut2-xncSh1dAKsXOZKfpw1OVlJ7XZGgmsH-k20qk58A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"countryCode\": \"VN\",\r\n    \"creationTime\": \"\",\r\n    \"coverage\": \"\",\r\n    \"custAddress\": {\r\n        \"address1\": \"12\",\r\n        \"address2\": \"\",\r\n        \"city\": \"Delhi\",\r\n        \"countryCode\": \"VN\",\r\n        \"postalCode\": \"10602\",\r\n        \"state\": \"\"\r\n    },\r\n    \"custMobileNumber\": \"84563547224\",\r\n    \"customerEmail\": \"victorteh@altecflex.com\",\r\n    \"customerLastName\": \"ing\",\r\n    \"customerName\": \"TriaP4\",\r\n    \"deviceMake\": \"Vivo\",\r\n    \"deviceModel\": \"Smartphone - Vivo 1714\",\r\n    \"orderId\": \"998774675593\",\r\n    \"policyIMEINumber\": \"528517249652591\",\r\n    \"policyStartDate\": \"26/05/2022\",\r\n    \"policyPurchaseDate\": \"26/05/2022\",\r\n    \"deviceDiagnosticUrl\": [],\r\n    \"deviceRRP\": \"37000000\",\r\n    \"partnerProductId\": \"\",\r\n    \"productCode\": \"VN_FPT_ADLD_LP_6M\",\r\n    \"deviceActivationDate\": \"2022-05-16T10:27:33.000+02:00\",\r\n    \"partnerId\": \"VNFPTCOTELNA01\",\r\n    \"productName\": \"FPT 6 Months ADLD - Laptops\",\r\n    \"deviceSoldDate\": \"26/05/2022\",\r\n    \"location\": \"VN\",\r\n    \"storeCode\": \"12051\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VN -VN_FPT_ADLD_LP_1Y",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUzNjE0OTMxLCJpYXQiOjE2NTM1Mjg1MzF9.8mcVJIzh1-0roPeshYt63AVRo6yuM2gmXBczKShjz05Ut2-xncSh1dAKsXOZKfpw1OVlJ7XZGgmsH-k20qk58A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"countryCode\": \"VN\",\r\n    \"creationTime\": \"\",\r\n    \"coverage\": \"\",\r\n    \"custAddress\": {\r\n        \"address1\": \"12\",\r\n        \"address2\": \"\",\r\n        \"city\": \"Delhi\",\r\n        \"countryCode\": \"VN\",\r\n        \"postalCode\": \"10602\",\r\n        \"state\": \"\"\r\n    },\r\n    \"custMobileNumber\": \"84563547225\",\r\n    \"customerEmail\": \"victorteh@altecflex.com\",\r\n    \"customerLastName\": \"ing\",\r\n    \"customerName\": \"Trial\",\r\n    \"deviceMake\": \"Vivo\",\r\n    \"deviceModel\": \"Smartphone - Vivo 1714\",\r\n    \"orderId\": \"998774675593\",\r\n    \"policyIMEINumber\": \"108317950599315\",\r\n    \"policyStartDate\": \"26/05/2022\",\r\n    \"policyPurchaseDate\": \"26/05/2022\",\r\n    \"deviceDiagnosticUrl\": [],\r\n    \"deviceRRP\": \"37000000\",\r\n    \"partnerProductId\": \"\",\r\n    \"productCode\": \"VN_FPT_ADLD_LP_1Y\",\r\n    \"deviceActivationDate\": \"2022-05-16T10:27:33.000+02:00\",\r\n    \"partnerId\": \"VNFPTCOTELNA01\",\r\n    \"productName\": \"FPT 1 Year ADLD - Laptops\",\r\n    \"deviceSoldDate\": \"26/05/2022\",\r\n    \"location\": \"VN\",\r\n    \"storeCode\": \"12051\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
