@@ -1,0 +1,1101 @@
+{
+	"info": {
+		"_postman_id": "74427104-aef5-420d-b0e9-8653a07ea56f",
+		"name": "NON-SC -Samsung Policy Creation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20342732"
+	},
+	"item": [
+		{
+			"name": "Login UAT Asia  - my own",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"victor.teh\",\r\n    \"password\": \"@MyZero22\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8081/login/permissions",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8081",
+					"path": [
+						"login",
+						"permissions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Policy UAT",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUwOTU3ODQ2LCJpYXQiOjE2NTA4NzE0NDZ9.OTtI3LDt-gaC3iVqGPx5SR3R6l0i6G9FCe9Bc2rAmcrndvi2dKlgfVUhn-KzHdWUGQD4jwZC0qEj1zk9rZ9d3Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"policyNumbers\":[\r\n      \"IDSSIDCF20220425000081\"\r\n\r\n    ],\r\n    \"deleteClaimsRelated\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policies/",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SEIN-Indonesia",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUzNDQxNDAxLCJpYXQiOjE2NTMzNTUwMDF9.65gaxliGqCbbUmo0AYACIqBzq_OIVzX2DdvTpF2bntcmhWcOgQW53Revae_wTOtu3b4aioA3u8F3kpoTTyvtZQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\": \"testu\",\r\n    \"customerLastName\": \"Victeh\",\r\n    \"custMobileNumber\": \"628996870172\",\r\n    \"customerEmail\": \"victorteh@altecflex.com\",\r\n    \"custAddress\": {\r\n        \"address1\": \"Kota BNI\",\r\n        \"address2\": \"Jl. Jend. Sudirman Kav. 1\",\r\n        \"city\": \"Sudirman\",\r\n        \"state\": \"Jakarta\",\r\n        \"countryCode\": \"ID\",\r\n        \"postalCode\": \"10220\"\r\n    },\r\n    \"partnerId\": \"IDSAMSUOEMNA01\",\r\n    \"partnerProductId\": \"IDNSTG20220315000802\",\r\n    \"policyIMEINumber\": \"917111881222222\",\r\n    \"deviceSerialNo\": \"\",\r\n    \"deviceSoldDate\": \"2022052400000\",\r\n    \"policyPurchaseDate\": \"20220524000000\",\r\n    \"orderId\": \"\",\r\n    \"brokerOrderId\": \"8848958\",\r\n    \"storeCode\": \"SP-BDG-002\",\r\n    \"countryCode\": \"ID\",\r\n    \"policyStartDate\": \"20220524000000\",\r\n    \"policyEndDate\": \"20230524000000\",\r\n    \"deviceRRP\": \"3499000\",\r\n    \"deviceModel\": \"SM-X205NIDFXID\",\r\n    \"deviceMake\": \"Samsung\",\r\n    \"deviceColor\": \"Black\",\r\n    \"deviceCapacity\": \"\",\r\n    \"deviceMemory\": \"\",\r\n    \"partnerContractId\": \"\",\r\n    \"salesRepId\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					],
+					"query": [
+						{
+							"key": "content-type",
+							"value": "application/json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SEIN-ID_02",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUwMzMzNDU4LCJpYXQiOjE2NTAyNDcwNTh9.pQ7Hyyn7FSub9fADoxbUzQTXmNbulvv_5yWiMRWLjjsonDIhzgT2P40f5LAV6WkgrTjgewYE_-LJ6VTA3Haxew",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\": \"Vilma Hutagulung\",\r\n    \"customerLastName\": \"ID\",\r\n    \"custMobileNumber\": \"628996870172\",\r\n    \"customerEmail\": \"victorteh@altecflex.com\",\r\n    \"custAddress\": {\r\n        \"address1\": \"Kota BNI\",\r\n        \"address2\": \"Jl. Jend. Sudirman Kav. 1\",\r\n        \"city\": \"Sudirman\",\r\n        \"state\": \"Jakarta\",\r\n        \"countryCode\": \"ID\",\r\n        \"postalCode\": \"10220\"\r\n    },\r\n    \"partnerId\": \"IDSAMSUOEMNA01\",\r\n    \"partnerProductId\": \"IDNSTG20220126000808\",\r\n    \"policyIMEINumber\": \"817585881467311\",\r\n    \"deviceSerialNo\": \"\",\r\n    \"deviceSoldDate\": \"20220518000000\",\r\n    \"policyPurchaseDate\": \"20220518000000\",\r\n    \"orderId\": \"\",\r\n    \"brokerOrderId\": \"8848958\",\r\n    \"storeCode\": \"SP-BDG-002\",\r\n    \"countryCode\": \"ID\",\r\n    \"policyStartDate\": \"20220518000000\",\r\n    \"policyEndDate\": \"20230518000000\",\r\n    \"deviceRRP\": \"3499000\",\r\n    \"deviceModel\": \"SM-X205NIDFXID\",\r\n    \"deviceMake\": \"Samsung\",\r\n    \"deviceColor\": \"Black\",\r\n    \"deviceCapacity\": \"\",\r\n    \"deviceMemory\": \"\",\r\n    \"partnerContractId\": \"IDN22B1455964442\",\r\n    \"salesRepId\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					],
+					"query": [
+						{
+							"key": "content-type",
+							"value": "application/json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policy-ID HomeCredit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUwNTk5NTEwLCJpYXQiOjE2NTA1MTMxMTB9.9_8Jd0PCXEMqVsT9N6NuFcbY0g4n4Fpwg0t5U8G8ag6I-ge5MBKSfOujq6w5Dz4Gcw833hCrXy6Z-3zM8VW29w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"countryCode\": \"ID\",\r\n  \"creationTime\": \"08:30:11\",\r\n  \"coverage\": \"ADLD\",\r\n  \"custAddress\": {\r\n    \"address1\": \"Rama 9 Rd., Huai Khwang, Huai Khwang\",\r\n    \"address2\": \"5\",\r\n    \"city\": \"Taguig\",\r\n    \"countryCode\": \"ID\",\r\n    \"postalCode\": \"10310\",\r\n    \"state\": \"Indonesia\"\r\n  },\r\n  \"custMobileNumber\": \"6282163124501\",\r\n  \"customerEmail\": \"victorteh@altecflex.com\",\r\n  \"customerLastName\": \"ID\",\r\n  \"customerName\": \"Home Credit\",\r\n  \"deviceModel\": \"Galaxy S21\",\r\n  \"orderId\": \"111123213731\",\r\n  \"paymentAmount\": \"2000\",\r\n  \"policyIMEINumber\": \"306274934939888\",\r\n  \"policyStartDate\": \"22/04/2022\",\r\n  \"policyPurchaseDate\": \"22/04/2022\",\r\n  \"deviceDiagnosticUrl\": [],\r\n  \"deviceRRP\": \"15000001\",\r\n  \"partnerProductId\": null,\r\n  \"productCode\": \"IDHOMINKA6ADLDEW12\",\r\n  \"deviceActivationDate\": \"22/04/2022\",\r\n  \"partnerId\": \"IDHOMCRRETNA01\",\r\n  \"productName\": \"Home Credit_Easy Cover Gold\",\r\n  \"deviceSoldDate\": \"22/04/2022\",\r\n  \"storeCode\": \"33606\",\r\n  \"brokerOrderId\": \"COM000007660941\",\r\n  \"salesRepId\": \"201503\",\r\n  \"subscriptionFlag\": true,\r\n  \"sku\": \"SM-G970FZKDXID\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policy-ID Erafone",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUxMTE5OTUwLCJpYXQiOjE2NTEwMzM1NTB9.a8fBkhg-_sJRpMa0zVTqFEXEvlDqHJlkeg55tdplfiOoKOQMbYSe6SNeavhK7E0AHNWsdh1YLeevICCTjETtkw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"countryCode\": \"ID\",\r\n  \"creationTime\": \"08:30:11\",\r\n  \"coverage\": \"ADLD\",\r\n  \"custAddress\": {\r\n    \"address1\": \"Jl Barito B/58, Jawa Tengah\",\r\n    \"address2\": \"5\",\r\n    \"city\": \"Taguig\",\r\n    \"countryCode\": \"ID\",\r\n    \"postalCode\": \"10310\",\r\n    \"state\": \"Indonesia\"\r\n  },\r\n  \"custMobileNumber\": \"6282163124501\",\r\n  \"customerEmail\": \"victorteh@altecflex.com\",\r\n  \"customerLastName\": \"ID\",\r\n  \"customerName\": \"Erafone\",\r\n  \"deviceModel\": \"Galaxy S21\",\r\n  \"orderId\": \"111123213731\",\r\n  \"paymentAmount\": \"2000\",\r\n  \"policyIMEINumber\": \"450528982528338\",\r\n  \"policyStartDate\": \"27/04/2022\",\r\n  \"policyPurchaseDate\": \"27/04/2022\",\r\n  \"deviceDiagnosticUrl\": [],\r\n  \"deviceRRP\": \"3000001\",\r\n  \"partnerProductId\": null,\r\n  \"productCode\": \"IDERAFADLD627\",\r\n  \"deviceActivationDate\": \"27/04/2022\",\r\n  \"partnerId\": \"IDERAFORETNA01\",\r\n  \"productName\": \"PR2-PC06-BUNDLE-MI-11T\",\r\n  \"deviceSoldDate\": \"27/04/2022\",\r\n  \"storeCode\": \"33606\",\r\n  \"brokerOrderId\": \"COM000007660941\",\r\n  \"salesRepId\": \"201503\",\r\n  \"subscriptionFlag\": true,\r\n  \"sku\": \"SM-G970FZKDXID\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policy -TH",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcy5saW0iLCJyb2xlIjoiMTAsMywxMSIsInBvc3RhbEFkZHJlc3MiOiJSRUdJT05BTCIsIm1haWwiOiJsaW1wZXRzaGlhbmdAYWx0ZWNmbGV4LmNvbSIsImZpcnN0TG9naW4iOmZhbHNlLCJhdXRoVXBkYXRpb25SZXF1aXJlZCI6ZmFsc2UsImdpZE51bWJlciI6IjUwNSIsImV4cCI6MTY1MDEwMDI2NSwiaWF0IjoxNjUwMDEzODY1fQ._O9jHzreumhyvhJQ0dr5Gh370pjSDUEY_c2RgYQqGNLoj97pN7efPFh5WzawZWeqjIbKUaXU0IBZXnRL5xf7Wg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerName\": \"Kittisak Pornthip\",\r\n  \"customerLastName\": \"TH\",\r\n  \"custMobileNumber\": \"628996870172\",\r\n  \"customerEmail\": \"victorteh@altecflex.com\",\r\n  \"custAddress\":{\r\n        \"address1\":\"Kota BNI\",\r\n        \"address2\":\"Jl. Jend. Sudirman Kav. 1\",\r\n        \"city\":\"Sudirman\",\r\n        \"state\":\"Chiang Rai\",\r\n        \"countryCode\":\"ID\",\r\n        \"postalCode\":\"10220\"\r\n   },\r\n  \"partnerId\": \"THSAMSUOEMNA01\",\r\n  \"partnerProductId\": \"THASTG20220209000752\",\r\n  \"policyIMEINumber\": \"917585881467121\",\r\n  \"deviceSerialNo\":\"\",\r\n  \"deviceSoldDate\": \"20220415000000\",\r\n  \"policyPurchaseDate\": \"20220415000000\",\r\n  \"orderId\": \"\",\r\n  \"brokerOrderId\":\"8848958\",\r\n  \"storeCode\": \"SP-BDG-002\",\r\n  \"countryCode\": \"ID\",\r\n  \"policyStartDate\": \"20220415000000\",\r\n  \"policyEndDate\": \"20230415000000\",\r\n  \"deviceRRP\": \"3499000\",\r\n  \"deviceModel\": \"SM-X205NIDFXID\",\r\n  \"deviceMake\":\"Samsung\",\r\n  \"deviceColor\": \"Black\",\r\n  \"deviceCapacity\": \"\",\r\n  \"deviceMemory\": \"\",\r\n  \"partnerContractId\": \"THF99J82393820024\",\r\n  \"salesRepId\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policy -TH Sam",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUxMjk1MTkyLCJpYXQiOjE2NTEyMDg3OTJ9.I_DYvIw3ueBUkj28wJ_pd3-_mlB6t7dbfJDHzKPTAe46j97NdxTRvx0JSmzHL4hMh0AjqcEmOkHjXbwONm8pIQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerName\": \"Kittisak Pornthip\",\r\n  \"customerLastName\": \"TH\",\r\n  \"custMobileNumber\": \"628996870172\",\r\n  \"customerEmail\": \"victorteh@altecflex.com\",\r\n  \"custAddress\":{\r\n        \"address1\":\"Kota BNI\",\r\n        \"address2\":\"Jl. Jend. Sudirman Kav. 1\",\r\n        \"city\":\"Sudirman\",\r\n        \"state\":\"Chiang Rai\",\r\n        \"countryCode\":\"TH\",\r\n        \"postalCode\":\"10220\"\r\n   },\r\n  \"partnerId\": \"THSAMSUOEMNA01\",\r\n  \"partnerProductId\": \"THASTG20220408000158\",\r\n  \"policyIMEINumber\": \"104105515805777\",\r\n  \"deviceSerialNo\":\"\",\r\n  \"deviceSoldDate\": \"20220429000000\",\r\n  \"policyPurchaseDate\": \"20220429000000\",\r\n  \"orderId\": \"\",\r\n  \"brokerOrderId\":\"8848958\",\r\n  \"storeCode\": \"SP-BDG-002\",\r\n  \"countryCode\": \"TH\",\r\n  \"policyStartDate\": \"20220429000000\",\r\n  \"policyEndDate\": \"20230429000000\",\r\n  \"deviceRRP\": \"3499000\",\r\n  \"deviceModel\": \"SM-X205NIDFXID\",\r\n  \"deviceMake\":\"Samsung\",\r\n  \"deviceColor\": \"Black\",\r\n  \"deviceCapacity\": \"\",\r\n  \"deviceMemory\": \"\",\r\n  \"partnerContractId\": \"THF99J82393820024\",\r\n  \"salesRepId\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policy-TH_TGFone",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUzNTUxNTQwLCJpYXQiOjE2NTM0NjUxNDB9.kYQ7LaHFVw63oLYkfIjj_njYDRQgc53avwrjG_ZKSSLm6-QI0mR0687vz-QBA2y-ogtRMNf0G6Kcnw1QnccOHQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"countryCode\": \"TH\",\r\n  \"creationTime\": \"08:30:11\",\r\n  \"coverage\": \"ADLD\",\r\n  \"custAddress\": {\r\n    \"address1\": \"Rama 9 Rd., Huai Khwang, Huai Khwang\",\r\n    \"address2\": \"5\",\r\n    \"city\": \"Taguig\",\r\n    \"countryCode\": \"TH\",\r\n    \"postalCode\": \"10310\",\r\n    \"state\": \"Bangkok\"\r\n  },\r\n  \"custMobileNumber\": \"66893934460\",\r\n  \"customerEmail\": \"victorteh@altecflex.com\",\r\n  \"customerLastName\": \"TH\",\r\n  \"customerName\": \"MemoXpress MXure\",\r\n  \"deviceMake\": \"Samsung\",\r\n  \"deviceModel\": \"Galaxy S21\",\r\n  \"orderId\": \"111123213731\",\r\n  \"paymentAmount\": \"2000\",\r\n  \"policyIMEINumber\": \"010971277355400\",\r\n  \"policyStartDate\": \"25/05/2022\",\r\n  \"policyPurchaseDate\": \"25/05/2022\",\r\n  \"deviceDiagnosticUrl\": [],\r\n  \"deviceRRP\": \"4000\",\r\n  \"partnerProductId\": null,\r\n  \"productCode\": \"THTGFTHADLD1201\",\r\n  \"deviceActivationDate\": \"25/05/2022\",\r\n  \"partnerId\": \"THTGFONRETDG01\",\r\n  \"productName\": \"TG Fone 12 Months UBLB (Digital)\",\r\n  \"deviceSoldDate\": \"25/05/2022\",\r\n  \"storeCode\": \"33606\",\r\n  \"brokerOrderId\": \"COM000007660941\",\r\n  \"salesRepId\": \"201503\",\r\n  \"subscriptionFlag\": true,\r\n  \"sku\": \"SM-G970FZKDXID\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policy-TH_JMart-non Sam",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUwNTk5NTEwLCJpYXQiOjE2NTA1MTMxMTB9.9_8Jd0PCXEMqVsT9N6NuFcbY0g4n4Fpwg0t5U8G8ag6I-ge5MBKSfOujq6w5Dz4Gcw833hCrXy6Z-3zM8VW29w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"countryCode\": \"TH\",\r\n  \"creationTime\": \"08:30:11\",\r\n  \"coverage\": \"ADLD\",\r\n  \"custAddress\": {\r\n    \"address1\": \"Rama 9 Rd., Huai Khwang, Huai Khwang\",\r\n    \"address2\": \"5\",\r\n    \"city\": \"Taguig\",\r\n    \"countryCode\": \"TH\",\r\n    \"postalCode\": \"10310\",\r\n    \"state\": \"Bangkok\"\r\n  },\r\n  \"custMobileNumber\": \"66893934461\",\r\n  \"customerEmail\": \"victorteh@altecflex.com\",\r\n  \"customerLastName\": \"TH\",\r\n  \"customerName\": \"Jmart\",\r\n  \"deviceMake\": \"Samsung\",\r\n  \"deviceModel\": \"Galaxy S21\",\r\n  \"orderId\": \"111123213731\",\r\n  \"paymentAmount\": \"2000\",\r\n  \"policyIMEINumber\": \"306274934939321\",\r\n  \"policyStartDate\": \"21/04/2022\",\r\n  \"policyPurchaseDate\": \"21/04/2022\",\r\n  \"deviceDiagnosticUrl\": [],\r\n  \"deviceRRP\": \"9990\",\r\n  \"partnerProductId\": null,\r\n  \"productCode\": \"THJMARTTHADLD15\",\r\n  \"deviceActivationDate\": \"21/04/2022\",\r\n  \"partnerId\": \"THJMARTRETNA01\",\r\n  \"productName\": \"Jaymart Buy 12 Months ABLB Get 3 Months Free Campaign\",\r\n  \"deviceSoldDate\": \"21/04/2022\",\r\n  \"storeCode\": \"33606\",\r\n  \"brokerOrderId\": \"COM000007660941\",\r\n  \"salesRepId\": \"201503\",\r\n  \"subscriptionFlag\": true,\r\n  \"sku\": \"SM-G970FZKDXID\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policy-PH_Memox",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUzMDk3ODY3LCJpYXQiOjE2NTMwMTE0Njd9.s4JD9ftUagth4wDUFCjJoXG6NTqIzBFyg8Xtz8syJKSghUra0OrcpR4jkCqggmagJgq7AnzsmA8W2NX-ZzcueQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"countryCode\": \"PH\",\r\n  \"creationTime\": \"08:30:11\",\r\n  \"coverage\": \"ADLD\",\r\n  \"custAddress\": {\r\n    \"address1\": \"East Service Road\",\r\n    \"address2\": \"5\",\r\n    \"city\": \"Taguig\",\r\n    \"countryCode\": \"PH\",\r\n    \"postalCode\": \"1630\",\r\n    \"state\": \"Metro Manila\"\r\n  },\r\n  \"custMobileNumber\": \"638523658956\",\r\n  \"customerEmail\": \"victorteh@altecflex.com\",\r\n  \"customerLastName\": \"PH\",\r\n  \"customerName\": \"MemoXpress MXure\",\r\n  \"deviceMake\": \"Vivo\",\r\n  \"deviceModel\": \"Vivo V23\",\r\n  \"orderId\": \"111123213731\",\r\n  \"paymentAmount\": \"15.9\",\r\n  \"policyIMEINumber\": \"308793329603509\",\r\n  \"policyStartDate\": \"20/05/2022\",\r\n  \"policyPurchaseDate\": \"20/05/2022\",\r\n  \"deviceDiagnosticUrl\": [],\r\n  \"deviceRRP\": \"60001\",\r\n  \"partnerProductId\": null,\r\n  \"productCode\": \"PHMXADLD2\",\r\n  \"deviceActivationDate\": \"20/05/2022\",\r\n  \"partnerId\": \"PHMEMOXRETNA01\",\r\n  \"productName\": \"PH MemoX 2M Free Mandatory\",\r\n  \"deviceSoldDate\": \"20/05/2022\",\r\n  \"storeCode\": \"33606\",\r\n  \"brokerOrderId\": \"COM000007660941\",\r\n  \"salesRepId\": \"201503\",\r\n  \"subscriptionFlag\": true,\r\n  \"sku\": \"SM-G970FZKDXID\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policy-PH_PayMaya",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUwNjA5NzA4LCJpYXQiOjE2NTA1MjMzMDh9.K0OhLl-Nop6fs8AXSULEhbh9wnpsqeJh2e_-JJZy3xMkUpX5uo0z-k1-vdAT7wCDM25pjN1D7pl3JbwvOtvZ7w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"countryCode\": \"PH\",\r\n  \"creationTime\": \"08:30:11\",\r\n  \"coverage\": \"ADLD\",\r\n  \"custAddress\": {\r\n    \"address1\": \"East Service Road\",\r\n    \"address2\": \"5\",\r\n    \"city\": \"Taguig\",\r\n    \"countryCode\": \"PH\",\r\n    \"postalCode\": \"1630\",\r\n    \"state\": \"Metro Manila\"\r\n  },\r\n  \"custMobileNumber\": \"639335559187\",\r\n  \"customerEmail\": \"victorteh@altecflex.com\",\r\n  \"customerLastName\": \"PH\",\r\n  \"customerName\": \"Pmaya\",\r\n  \"deviceMake\": \"Vivo\",\r\n  \"deviceModel\": \"Vivo V23\",\r\n  \"orderId\": \"111123213731\",\r\n  \"paymentAmount\": \"15.9\",\r\n  \"policyIMEINumber\": \"440200308473523\",\r\n  \"policyStartDate\": \"21/04/2022\",\r\n  \"policyPurchaseDate\": \"21/04/2022\",\r\n  \"deviceDiagnosticUrl\": [],\r\n  \"deviceRRP\": \"90001\",\r\n  \"partnerProductId\": null,\r\n  \"productCode\": \"PH_PMPH_CS_1Y\",\r\n  \"deviceActivationDate\": \"21/04/2022\",\r\n  \"partnerId\": \"PHPMAYAFINDG01\",\r\n  \"productName\": \"Paymaya Cracked Screen 12 months installment (10 bands)\",\r\n  \"deviceSoldDate\": \"21/04/2022\",\r\n  \"storeCode\": \"33606\",\r\n  \"brokerOrderId\": \"COM000007660941\",\r\n  \"salesRepId\": \"201503\",\r\n  \"subscriptionFlag\": true,\r\n  \"sku\": \"SM-G970FZKDXID\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policy -TH JMart",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUwNTIxODkyLCJpYXQiOjE2NTA0MzU0OTJ9.WICfMrxGF0BVZpjgWtsxcUWbulIe_4fNePdIab-vI_VxMddwUY4kFyl0oIucyTBvMrVb7_lOaxrxkiQlr1wvrw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerName\": \"Kittisak Pornthip\",\r\n  \"customerLastName\": \"TH\",\r\n  \"custMobileNumber\": \"628996870122\",\r\n  \"customerEmail\": \"victorteh@altecflex.com\",\r\n  \"custAddress\":{\r\n        \"address1\":\"Kota BNI\",\r\n        \"address2\":\"Jl. Jend. Sudirman Kav. 1\",\r\n        \"city\":\"Sudirman\",\r\n        \"state\":\"Chiang Rai\",\r\n        \"countryCode\":\"ID\",\r\n        \"postalCode\":\"10220\"\r\n   },\r\n  \"partnerId\": \"THTGFONRETNA01\",\r\n  \"partnerProductId\": \"THASTG20220209000752\",\r\n  \"policyIMEINumber\": \"917585881444121\",\r\n  \"deviceSerialNo\":\"\",\r\n  \"deviceSoldDate\": \"20220420000000\",\r\n  \"policyPurchaseDate\": \"20220420000000\",\r\n  \"orderId\": \"\",\r\n  \"brokerOrderId\":\"8848958\",\r\n  \"storeCode\": \"SP-BDG-002\",\r\n  \"countryCode\": \"ID\",\r\n  \"policyStartDate\": \"20220420000000\",\r\n  \"policyEndDate\": \"20230420000000\",\r\n  \"deviceRRP\": \"3499000\",\r\n  \"deviceModel\": \"SM-X205NIDFXID\",\r\n  \"deviceMake\":\"Samsung\",\r\n  \"deviceColor\": \"Black\",\r\n  \"deviceCapacity\": \"\",\r\n  \"deviceMemory\": \"\",\r\n  \"partnerContractId\": \"\",\r\n  \"salesRepId\": \"\",\r\n  \"productName\":\"TG Fone 12 Months UBLB\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policy -TH Shopee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUzNjE0OTMxLCJpYXQiOjE2NTM1Mjg1MzF9.8mcVJIzh1-0roPeshYt63AVRo6yuM2gmXBczKShjz05Ut2-xncSh1dAKsXOZKfpw1OVlJ7XZGgmsH-k20qk58A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerName\": \"Kittisak Pornthip\",\r\n  \"customerLastName\": \"TH\",\r\n  \"custMobileNumber\": \"666625191784\",\r\n  \"customerEmail\": \"victorteh@altecflex.com\",\r\n  \"custAddress\":{\r\n        \"address1\":\" 29/5 Moo 2 Bangkoknoi-Nakornchaisri Rd.\",\r\n        \"address2\":\"\",\r\n        \"city\":\"Sam Phran\",\r\n        \"state\":\"Nakhon Pathom\",\r\n        \"countryCode\":\"TH\",\r\n        \"postalCode\":\"73110\"\r\n   },\r\n  \"partnerId\": \"THSHOPEONLDG01\",\r\n  \"partnerProductId\":\"\",\r\n  \"policyIMEINumber\": \"017478552684978\",\r\n  \"deviceSerialNo\":\"\",\r\n  \"deviceSoldDate\": \"20220526000000\",\r\n  \"policyPurchaseDate\": \"20220526000000\",\r\n  \"orderId\": \"\",\r\n  \"brokerOrderId\":\"8848958\",\r\n  \"storeCode\": \"SP-BDG-005\",\r\n  \"countryCode\": \"TH\",\r\n  \"policyStartDate\": \"20220526000000\",\r\n  \"policyEndDate\": \"20230526000000\",\r\n  \"deviceRRP\": \"6000\",\r\n  \"deviceModel\": \"iPhone 13 Pro\",\r\n  \"deviceMake\":\"Apple\",\r\n  \"deviceColor\": \"Purple\",\r\n  \"deviceCapacity\": \"\",\r\n  \"deviceMemory\": \"\",\r\n  \"partnerContractId\": \"\",\r\n  \"salesRepId\": \"\",\r\n  \"productCode\":\"THSHOTHFR5ADLDTHEFT12\",\r\n  \"productName\":\"TH Shopee_12M ADLD+THEFT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policy -MY",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUzNzIxNzY5LCJpYXQiOjE2NTM2MzUzNjl9.0MKd9qGe44vMydsJZkqta74n0CQLUS8VvA1yyCHR7imCTPnhkNaAkW-x9l4dLdRPI2ucsWiYK1sV5N-UUKdwGQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerName\": \"jimmy Bin Jibby\",\r\n  \"customerLastName\": \"MY\",\r\n  \"custMobileNumber\": \"628996870172\",\r\n  \"customerEmail\": \"victorteh@altecflex.com\",\r\n  \"custAddress\":{\r\n        \"address1\":\"Bukit Aman\",\r\n        \"address2\":\"Jln Kota Damansara yg Terutama\",\r\n        \"city\":\"Kuala Lumpur\",\r\n        \"state\":\"Kuala Lumpur\",\r\n        \"countryCode\":\"MY\",\r\n        \"postalCode\":\"42770\"\r\n   },\r\n  \"partnerId\": \"MYSAMSUOEMNA01\",\r\n  \"partnerProductId\": \"MYSSTG20220407000031\",\r\n  \"policyIMEINumber\": \"996905075169306\",\r\n  \"deviceSerialNo\":\"\",\r\n  \"deviceSoldDate\": \"20220527000000\",\r\n  \"policyPurchaseDate\": \"20220527000000\",\r\n  \"orderId\": \"\",\r\n  \"brokerOrderId\":\"8848958\",\r\n  \"storeCode\": \"SP-BDG-002\",\r\n  \"countryCode\": \"MY\",\r\n  \"policyStartDate\": \"20220527000000\",\r\n  \"policyEndDate\": \"20230527000000\",\r\n  \"deviceRRP\": \"3499000\",\r\n  \"deviceModel\": \"SM-X205NIDFXID\",\r\n  \"deviceMake\":\"Samsung\",\r\n  \"deviceColor\": \"Black\",\r\n  \"deviceCapacity\": \"\",\r\n  \"deviceMemory\": \"\",\r\n  \"partnerContractId\": \"MYS99J82393820321\",\r\n  \"salesRepId\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policy -MY non-SAM",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUwMzMzNDU4LCJpYXQiOjE2NTAyNDcwNTh9.pQ7Hyyn7FSub9fADoxbUzQTXmNbulvv_5yWiMRWLjjsonDIhzgT2P40f5LAV6WkgrTjgewYE_-LJ6VTA3Haxew",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerName\": \"Fahmi dollah \",\r\n  \"customerLastName\": \"MY\",\r\n  \"custMobileNumber\": \"0173902247\",\r\n  \"customerEmail\": \"victorteh@altecflex.com\",\r\n  \"custAddress\":{\r\n        \"address1\":\"Bukit Aman\",\r\n        \"address2\":\"Jln Kota Damansara yg Terutama\",\r\n        \"city\":\"Kuala Lumpur\",\r\n        \"state\":\"Kuala Lumpur\",\r\n        \"countryCode\":\"MY\",\r\n        \"postalCode\":\"42770\"\r\n   },\r\n  \"partnerId\": \"MYTMUNITELNA01\",\r\n  \"partnerProductId\": \"\",\r\n  \"policyIMEINumber\": \"699135267495042\",\r\n  \"deviceSerialNo\":\"\",\r\n  \"deviceSoldDate\": \"18/04/2022\",\r\n  \"policyPurchaseDate\": \"18/04/2022\",\r\n  \"orderId\": \"\",\r\n  \"brokerOrderId\":\"8848958\",\r\n  \"storeCode\": \"SP-BDG-003\",\r\n  \"countryCode\": \"MY\",\r\n  \"policyStartDate\": \"18/04/2022\",\r\n  \"policyEndDate\": \"18/04/2022\",\r\n  \"deviceRRP\": \"500\",\r\n  \"deviceModel\": \"SM-X205NIDFXID\",\r\n  \"deviceMake\":\"Samsung\",\r\n  \"deviceColor\": \"Black\",\r\n  \"deviceCapacity\": \"\",\r\n  \"deviceMemory\": \"\",\r\n  \"partnerContractId\": \"MYS91J82393824321\",\r\n  \"salesRepId\": \"\",\r\n  \"productName\" : \"MY TMUNIFI 12M CS Mandatory\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policy -MY -Aeon",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUzNzIxNzY5LCJpYXQiOjE2NTM2MzUzNjl9.0MKd9qGe44vMydsJZkqta74n0CQLUS8VvA1yyCHR7imCTPnhkNaAkW-x9l4dLdRPI2ucsWiYK1sV5N-UUKdwGQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerName\": \" Amin dollah \",\r\n  \"customerLastName\": \"MY\",\r\n  \"custMobileNumber\": \"01438622247\",\r\n  \"customerEmail\": \"victorteh@altecflex.com\",\r\n  \"custAddress\":{\r\n        \"address1\":\"Bukit Aman\",\r\n        \"address2\":\"Jln Kota Damansara yg Terutama\",\r\n        \"city\":\"Kuala Lumpur\",\r\n        \"state\":\"Kuala Lumpur\",\r\n        \"countryCode\":\"MY\",\r\n        \"postalCode\":\"42770\"\r\n   },\r\n  \"partnerId\": \"MYAEONCRETCF01\",\r\n  \"partnerProductId\": \"\",\r\n  \"policyIMEINumber\": \"867295462116881\",\r\n  \"deviceSerialNo\":\"\",\r\n  \"deviceSoldDate\": \"27/05/2022\",\r\n  \"policyPurchaseDate\": \"27/05/2022\",\r\n  \"orderId\": \"\",\r\n  \"brokerOrderId\":\"8848958\",\r\n  \"storeCode\": \"SP-BDG-003\",\r\n  \"countryCode\": \"MY\",\r\n  \"policyStartDate\": \"27/05/2022\",\r\n  \"policyEndDate\": \"27/05/2022\",\r\n  \"deviceRRP\": \"500\",\r\n  \"deviceModel\": \"SM-X205NIDFXID\",\r\n  \"deviceMake\":\"Samsung\",\r\n  \"deviceColor\": \"Black\",\r\n  \"deviceCapacity\": \"\",\r\n  \"deviceMemory\": \"\",\r\n  \"partnerContractId\": \"\",\r\n  \"salesRepId\": \"\",\r\n  \"productName\" : \"ADLD12_AN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policy -HK",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUwMzMzNDU4LCJpYXQiOjE2NTAyNDcwNTh9.pQ7Hyyn7FSub9fADoxbUzQTXmNbulvv_5yWiMRWLjjsonDIhzgT2P40f5LAV6WkgrTjgewYE_-LJ6VTA3Haxew",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerName\": \"Hou Leng\",\r\n  \"customerLastName\": \"HK\",\r\n  \"custMobileNumber\": \"85227900186\",\r\n  \"customerEmail\": \"victorteh@altecflex.com\",\r\n  \"custAddress\":{\r\n        \"address1\":\"Apartment 69\",\r\n        \"address2\":\"Kowloon 4 \",\r\n        \"city\":\"Hong Kong\",\r\n        \"state\":\"Hong Kong\",\r\n        \"countryCode\":\"HK\",\r\n        \"postalCode\":\"\"\r\n   },\r\n  \"partnerId\": \"HKSAMSUOEMNA01\",\r\n  \"partnerProductId\": \"HKGSTG20210120000754\",\r\n  \"policyIMEINumber\": \"409135267495025\",\r\n  \"deviceSerialNo\":\"\",\r\n  \"deviceSoldDate\": \"20220418000000\",\r\n  \"policyPurchaseDate\": \"20220418000000\",\r\n  \"orderId\": \"\",\r\n  \"brokerOrderId\":\"8848958\",\r\n  \"storeCode\": \"SP-BDG-002\",\r\n  \"countryCode\": \"ID\",\r\n  \"policyStartDate\": \"20220418000000\",\r\n  \"policyEndDate\": \"20230418000000\",\r\n  \"deviceRRP\": \"3499000\",\r\n  \"deviceModel\": \"SM-X205NIDFXID\",\r\n  \"deviceMake\":\"Samsung\",\r\n  \"deviceColor\": \"Black\",\r\n  \"deviceCapacity\": \"\",\r\n  \"deviceMemory\": \"\",\r\n  \"partnerContractId\": \"HKS99J82393824325\",\r\n  \"salesRepId\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policy -Taiwan",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUwNjA5NzA4LCJpYXQiOjE2NTA1MjMzMDh9.K0OhLl-Nop6fs8AXSULEhbh9wnpsqeJh2e_-JJZy3xMkUpX5uo0z-k1-vdAT7wCDM25pjN1D7pl3JbwvOtvZ7w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerName\": \"Sheng\",\r\n  \"customerLastName\": \"TW\",\r\n  \"custMobileNumber\": \"628996870172\",\r\n  \"customerEmail\": \"victorteh@altecflex.com\",\r\n  \"custAddress\":{\r\n        \"address1\":\"Kota BNI\",\r\n        \"address2\":\"Jl. Jend. Sudirman Kav. 1\",\r\n        \"city\":\"Sudirman\",\r\n        \"state\":\"Chiang Rai\",\r\n        \"countryCode\":\"TW\",\r\n        \"postalCode\":\"10220\"\r\n   },\r\n  \"partnerId\": \"TWSAMSUOEMNA01\",\r\n  \"partnerProductId\": \"TWNSTG20220118000026\",\r\n  \"policyIMEINumber\": \"015719509653221\",\r\n  \"deviceSerialNo\":\"\",\r\n  \"deviceSoldDate\": \"20220421000000\",\r\n  \"policyPurchaseDate\": \"20220421000000\",\r\n  \"orderId\": \"\",\r\n  \"brokerOrderId\":\"8848958\",\r\n  \"storeCode\": \"SP-BDG-002\",\r\n  \"countryCode\": \"TW\",\r\n  \"policyStartDate\": \"20220418000000\",\r\n  \"policyEndDate\": \"20230418000000\",\r\n  \"deviceRRP\": \"3499000\",\r\n  \"deviceModel\": \"SM-X205NIDFXID\",\r\n  \"deviceMake\":\"Samsung\",\r\n  \"deviceColor\": \"Black\",\r\n  \"deviceCapacity\": \"\",\r\n  \"deviceMemory\": \"\",\r\n  \"partnerContractId\": \"TWS99J82393820024\",\r\n  \"salesRepId\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policy -Vietnam",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUwMzMzNDU4LCJpYXQiOjE2NTAyNDcwNTh9.pQ7Hyyn7FSub9fADoxbUzQTXmNbulvv_5yWiMRWLjjsonDIhzgT2P40f5LAV6WkgrTjgewYE_-LJ6VTA3Haxew",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerName\": \"Vanc Duong\",\r\n  \"customerLastName\": \"VN\",\r\n  \"custMobileNumber\": \"38213769 \",\r\n  \"customerEmail\": \"victorteh@altecflex.com\",\r\n  \"custAddress\":{\r\n        \"address1\":\"46 , Kim Ma Street \",\r\n        \"address2\":\"Ba Dinh\",\r\n        \"city\":\"Hanoi\",\r\n        \"state\":\"Hanoi\",\r\n        \"countryCode\":\"ID\",\r\n        \"postalCode\":\"95001\"\r\n   },\r\n  \"partnerId\": \"VNSAMSUOEMNA01\",\r\n  \"partnerProductId\": \"VNMSTG20220321000542\",\r\n  \"policyIMEINumber\": \"215719509653372\",\r\n  \"deviceSerialNo\":\"\",\r\n  \"deviceSoldDate\": \"20220418000000\",\r\n  \"policyPurchaseDate\": \"20220418000000\",\r\n  \"orderId\": \"\",\r\n  \"brokerOrderId\":\"8848958\",\r\n  \"storeCode\": \"SP-BDG-002\",\r\n  \"countryCode\": \"VN\",\r\n  \"policyStartDate\": \"20220418000000\",\r\n  \"policyEndDate\": \"20230418000000\",\r\n  \"deviceRRP\": \"3499000\",\r\n  \"deviceModel\": \"SM-X205NIDFXID\",\r\n  \"deviceMake\":\"Samsung\",\r\n  \"deviceColor\": \"Black\",\r\n  \"deviceCapacity\": \"\",\r\n  \"deviceMemory\": \"\",\r\n  \"partnerContractId\": \"VNM99J82393820987\",\r\n  \"salesRepId\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policy-VN HomeCredit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUwNTk5NTEwLCJpYXQiOjE2NTA1MTMxMTB9.9_8Jd0PCXEMqVsT9N6NuFcbY0g4n4Fpwg0t5U8G8ag6I-ge5MBKSfOujq6w5Dz4Gcw833hCrXy6Z-3zM8VW29w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"countryCode\": \"VN\",\r\n  \"creationTime\": \"08:30:11\",\r\n  \"coverage\": \"ADLD\",\r\n  \"custAddress\": {\r\n    \"address1\": \"Rama 9 Rd., Huai Khwang, Huai Khwang\",\r\n    \"address2\": \"5\",\r\n    \"city\": \"Taguig\",\r\n    \"countryCode\": \"VN\",\r\n    \"postalCode\": \"10310\",\r\n    \"state\": \"Vietnam\"\r\n  },\r\n  \"custMobileNumber\": \"84338261398\",\r\n  \"customerEmail\": \"victorteh@altecflex.com\",\r\n  \"customerLastName\": \"VN\",\r\n  \"customerName\": \"Home Credit\",\r\n  \"deviceModel\": \"Galaxy S21\",\r\n  \"orderId\": \"111123213731\",\r\n  \"paymentAmount\": \"2000\",\r\n  \"policyIMEINumber\": \"306279935999880\",\r\n  \"policyStartDate\": \"21/04/2022\",\r\n  \"policyPurchaseDate\": \"21/04/2022\",\r\n  \"deviceRRP\": \"8000001\",\r\n  \"partnerProductId\": null,\r\n  \"productCode\": \"VN_HC_NA_ADLD_12M_CB_T\",\r\n  \"deviceActivationDate\": \"21/04/2022\",\r\n  \"partnerId\": \"VNHOMCRCFINA01\",\r\n  \"productName\": \"ADLD12_CB\",\r\n  \"deviceSoldDate\": \"21/04/2022\",\r\n  \"storeCode\": \"33606\",\r\n  \"brokerOrderId\": \"COM000007660941\",\r\n  \"salesRepId\": \"201503\",\r\n  \"subscriptionFlag\": true,\r\n  \"sku\": \"SM-G970FZKDXID\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policy-PH HomeCredit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUxMTk5NzA2LCJpYXQiOjE2NTExMTMzMDZ9.cOow28tcjukoqQp3MGjF7ayqaot0ETslp9i8xnzp0vmyFxtladZdZwRrW6SHiYjwl6UQ3Q5TlC9lADb5yu6U_Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"countryCode\": \"PH\",\r\n  \"creationTime\": \"08:30:11\",\r\n  \"coverage\": \"ADLD\",\r\n  \"custAddress\": {\r\n    \"address1\": \"Rama 9 Rd., Huai Khwang, Huai Khwang\",\r\n    \"address2\": \"5\",\r\n    \"city\": \"Taguig\",\r\n    \"countryCode\": \"VN\",\r\n    \"postalCode\": \"10310\",\r\n    \"state\": \"Vietnam\"\r\n  },\r\n  \"custMobileNumber\": \"84338261398\",\r\n  \"customerEmail\": \"victorteh@altecflex.com\",\r\n  \"customerLastName\": \"PHexes\",\r\n  \"customerName\": \"Home Credit\",\r\n  \"deviceModel\": \"Galaxy S21\",\r\n  \"orderId\": \"111123213731\",\r\n  \"paymentAmount\": \"2000\",\r\n  \"policyIMEINumber\": \"334600620044150\",\r\n  \"policyStartDate\": \"28/04/2022\",\r\n  \"policyPurchaseDate\": \"28/04/2022\",\r\n  \"deviceRRP\": \"120001\",\r\n  \"partnerProductId\": null,\r\n  \"productCode\": \"PH_HC_CS_1Y\",\r\n  \"deviceActivationDate\": \"28/04/2022\",\r\n  \"partnerId\": \"PHHOMCRCFINA01\",\r\n  \"productName\": \"HCP 12M CRACKED SCREEN DIGITAL VOLUNTARY\",\r\n  \"deviceSoldDate\": \"28/04/2022\",\r\n  \"storeCode\": \"33606\",\r\n  \"brokerOrderId\": \"COM000007660941\",\r\n  \"salesRepId\": \"201503\",\r\n  \"subscriptionFlag\": true,\r\n  \"sku\": \"SM-G970FZKDXID\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policy -PH_phillipine",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUwMzMzNDU4LCJpYXQiOjE2NTAyNDcwNTh9.pQ7Hyyn7FSub9fADoxbUzQTXmNbulvv_5yWiMRWLjjsonDIhzgT2P40f5LAV6WkgrTjgewYE_-LJ6VTA3Haxew",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerName\": \"Althea Maria Joseph\",\r\n  \"customerLastName\": \"PH\",\r\n  \"custMobileNumber\": \"0449425494\",\r\n  \"customerEmail\": \"victorteh@altecflex.com\",\r\n  \"custAddress\":{\r\n        \"address1\":\"Rm. 304 Gaston Building\",\r\n        \"address2\":\" 30 Elizalde Street, BF Homes\",\r\n        \"city\":\"Paranaque City\",\r\n        \"state\":\"Metro Manila\",\r\n        \"countryCode\":\"PH\",\r\n        \"postalCode\":\"1700\"\r\n   },\r\n  \"partnerId\": \"PHSAMSUOEMNA01\",\r\n  \"partnerProductId\": \"PHLSTG20200825000495\",\r\n  \"policyIMEINumber\": \"315719509653375\",\r\n  \"deviceSerialNo\":\"\",\r\n  \"deviceSoldDate\": \"20220418000000\",\r\n  \"policyPurchaseDate\": \"20220418000000\",\r\n  \"orderId\": \"\",\r\n  \"brokerOrderId\":\"8848958\",\r\n  \"storeCode\": \"SP-BDG-002\",\r\n  \"countryCode\": \"PH\",\r\n  \"policyStartDate\": \"20220418000000\",\r\n  \"policyEndDate\": \"20230418000000\",\r\n  \"deviceRRP\": \"3499000\",\r\n  \"deviceModel\": \"SM-X205NIDFXID\",\r\n  \"deviceMake\":\"Samsung\",\r\n  \"deviceColor\": \"Black\",\r\n  \"deviceCapacity\": \"\",\r\n  \"deviceMemory\": \"\",\r\n  \"partnerContractId\": \"PHL99J82393820961\",\r\n  \"salesRepId\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policy -PH_02",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUwMzMzNDU4LCJpYXQiOjE2NTAyNDcwNTh9.pQ7Hyyn7FSub9fADoxbUzQTXmNbulvv_5yWiMRWLjjsonDIhzgT2P40f5LAV6WkgrTjgewYE_-LJ6VTA3Haxew",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerName\": \"Mary Anthonio \",\r\n  \"customerLastName\": \"PH\",\r\n  \"custMobileNumber\": \"0449425494\",\r\n  \"customerEmail\": \"victorteh@altecflex.com\",\r\n  \"custAddress\":{\r\n        \"address1\":\" Sysu Centre\",\r\n        \"address2\":\" 145 Panay Avenue, NCR\",\r\n        \"city\":\"Quezon City\",\r\n        \"state\":\"Quezon\",\r\n        \"countryCode\":\"PH\",\r\n        \"postalCode\":\"1008\"\r\n   },\r\n  \"partnerId\": \"PHSAMSUOEMCF01\",\r\n  \"partnerProductId\": \"PHLSTG20191017000029\",\r\n  \"policyIMEINumber\": \"215719509653822\",\r\n  \"deviceSerialNo\":\"\",\r\n  \"deviceSoldDate\": \"20220418000000\",\r\n  \"policyPurchaseDate\": \"20220418000000\",\r\n  \"orderId\": \"\",\r\n  \"brokerOrderId\":\"8848958\",\r\n  \"storeCode\": \"SP-BDG-002\",\r\n  \"countryCode\": \"PH\",\r\n  \"policyStartDate\": \"20220418000000\",\r\n  \"policyEndDate\": \"20230418000000\",\r\n  \"deviceRRP\": \"2499000\",\r\n  \"deviceModel\": \"SM-X205NIDFXID\",\r\n  \"deviceMake\":\"Samsung\",\r\n  \"deviceColor\": \"Black\",\r\n  \"deviceCapacity\": \"\",\r\n  \"deviceMemory\": \"\",\r\n  \"partnerContractId\": \"PHL99J82393820985\",\r\n  \"salesRepId\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policy -PH_03",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUwMzMzNDU4LCJpYXQiOjE2NTAyNDcwNTh9.pQ7Hyyn7FSub9fADoxbUzQTXmNbulvv_5yWiMRWLjjsonDIhzgT2P40f5LAV6WkgrTjgewYE_-LJ6VTA3Haxew",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerName\": \"Gabriel Phillip \",\r\n  \"customerLastName\": \"PH\",\r\n  \"custMobileNumber\": \"0449425492\",\r\n  \"customerEmail\": \"victorteh@altecflex.com\",\r\n  \"custAddress\":{\r\n        \"address1\":\" Sysu Centre\",\r\n        \"address2\":\" 145 Panay Avenue, NCR\",\r\n        \"city\":\"Quezon City\",\r\n        \"state\":\"Quezon\",\r\n        \"countryCode\":\"PH\",\r\n        \"postalCode\":\"1008\"\r\n   },\r\n  \"partnerId\": \"PHSAMSUOEMDG01\",\r\n  \"partnerProductId\": \"PHLSTG20200802000846\",\r\n  \"policyIMEINumber\": \"215719509657322\",\r\n  \"deviceSerialNo\":\"\",\r\n  \"deviceSoldDate\": \"20220418000000\",\r\n  \"policyPurchaseDate\": \"20220418000000\",\r\n  \"orderId\": \"\",\r\n  \"brokerOrderId\":\"8848958\",\r\n  \"storeCode\": \"SP-BDG-002\",\r\n  \"countryCode\": \"PH\",\r\n  \"policyStartDate\": \"20220418000000\",\r\n  \"policyEndDate\": \"20230418000000\",\r\n  \"deviceRRP\": \"2499000\",\r\n  \"deviceModel\": \"SM-X205NIDFXID\",\r\n  \"deviceMake\":\"Samsung\",\r\n  \"deviceColor\": \"Black\",\r\n  \"deviceCapacity\": \"\",\r\n  \"deviceMemory\": \"\",\r\n  \"partnerContractId\": \"PHL98J82393820980\",\r\n  \"salesRepId\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policy -PH-Mexo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWN0b3IudGVoIiwicm9sZSI6IjEwLDMsMywzIiwicG9zdGFsQWRkcmVzcyI6IlJFR0lPTkFMIiwibWFpbCI6InZpY3RvcnRlaEBhbHRlY2ZsZXguY29tIiwiZmlyc3RMb2dpbiI6ZmFsc2UsImF1dGhVcGRhdGlvblJlcXVpcmVkIjpmYWxzZSwiZ2lkTnVtYmVyIjoiNTA1IiwiZXhwIjoxNjUwMzMzNDU4LCJpYXQiOjE2NTAyNDcwNTh9.pQ7Hyyn7FSub9fADoxbUzQTXmNbulvv_5yWiMRWLjjsonDIhzgT2P40f5LAV6WkgrTjgewYE_-LJ6VTA3Haxew",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerName\": \"Gabriel Phillip \",\r\n  \"customerLastName\": \"PH\",\r\n  \"custMobileNumber\": \"0449425492\",\r\n  \"customerEmail\": \"victorteh@altecflex.com\",\r\n  \"custAddress\":{\r\n        \"address1\":\" Sysu Centre\",\r\n        \"address2\":\" 145 Panay Avenue, NCR\",\r\n        \"city\":\"Quezon City\",\r\n        \"state\":\"Quezon\",\r\n        \"countryCode\":\"PH\",\r\n        \"postalCode\":\"1008\"\r\n   },\r\n  \"partnerId\": \"PHSAMSUOEMDG01\",\r\n  \"partnerProductId\": \"PHLSTG20200802000846\",\r\n  \"policyIMEINumber\": \"215719509657322\",\r\n  \"deviceSerialNo\":\"\",\r\n  \"deviceSoldDate\": \"20220418000000\",\r\n  \"policyPurchaseDate\": \"20220418000000\",\r\n  \"orderId\": \"\",\r\n  \"brokerOrderId\":\"8848958\",\r\n  \"storeCode\": \"SP-BDG-002\",\r\n  \"countryCode\": \"PH\",\r\n  \"policyStartDate\": \"20220418000000\",\r\n  \"policyEndDate\": \"20230418000000\",\r\n  \"deviceRRP\": \"2499000\",\r\n  \"deviceModel\": \"SM-X205NIDFXID\",\r\n  \"deviceMake\":\"Samsung\",\r\n  \"deviceColor\": \"Black\",\r\n  \"deviceCapacity\": \"\",\r\n  \"deviceMemory\": \"\",\r\n  \"partnerContractId\": \"PHL98J82393820980\",\r\n  \"salesRepId\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policy-PH",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"countryCode\": \"PH\",\r\n  \"creationTime\": \"08:30:11\",\r\n  \"coverage\": \"ADLD\",\r\n  \"custAddress\": {\r\n    \"address1\": \"East Service Road\",\r\n    \"address2\": \"5\",\r\n    \"city\": \"Taguig\",\r\n    \"countryCode\": \"PH\",\r\n    \"postalCode\": \"1630\",\r\n    \"state\": \"Metro Manila\"\r\n  },\r\n  \"custMobileNumber\": \"638523658956\",\r\n  \"customerEmail\": \"victorteh@altecflex.com\",\r\n  \"customerLastName\": \"PH\",\r\n  \"customerName\": \"MemoXpress MXure\",\r\n  \"deviceMake\": \"Samsung\",\r\n  \"deviceModel\": \"Galaxy S21\",\r\n  \"orderId\": \"111123213731\",\r\n  \"paymentAmount\": \"15.9\",\r\n  \"policyIMEINumber\": \"983747604534583\",\r\n  \"policyStartDate\": \"23/03/2022\",\r\n  \"policyPurchaseDate\": \"23/03/2022\",\r\n  \"deviceDiagnosticUrl\": [],\r\n  \"deviceRRP\": \"120001\",\r\n  \"partnerProductId\": null,\r\n  \"productCode\": \"PH_MX_NA_ADLD_THEFT_1Y\",\r\n  \"deviceActivationDate\": \"23/03/2022\",\r\n  \"partnerId\": \"PHMEMOXRETNA01\",\r\n  \"productName\": \"AMS25-AMTRSTADLDTF\",\r\n  \"deviceSoldDate\": \"23/03/2022\",\r\n  \"storeCode\": \"33606\",\r\n  \"brokerOrderId\": \"COM000007660941\",\r\n  \"salesRepId\": \"201503\",\r\n  \"subscriptionFlag\": true,\r\n  \"sku\": \"SM-G970FZKDXID\"\r\n}"
+				},
+				"url": {
+					"raw": "https://crmz-uat.device.bolttech.asia:8082/policy",
+					"protocol": "https",
+					"host": [
+						"crmz-uat",
+						"device",
+						"bolttech",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Scheduler Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://crm.amtrust.asia:8082/policy/scheduler?serviceCode=P003",
+					"protocol": "https",
+					"host": [
+						"crm",
+						"amtrust",
+						"asia"
+					],
+					"port": "8082",
+					"path": [
+						"policy",
+						"scheduler"
+					],
+					"query": [
+						{
+							"key": "serviceCode",
+							"value": "P003"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
