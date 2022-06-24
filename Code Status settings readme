@@ -1,0 +1,22 @@
+CW          :  https://api.uat.device.bolttech.eu/v1/order/create-customer-fulfill
+Internal   : https://optimus.uat.device.bolttech.eu:8082/policy
+Samsung : https://stg-eu-api.mobilecare.svc.samsung.com/mc/v3/registration
+
+
+
+
+
+
+Contract Status Code
+
+Active - "10001"
+
+Grace Period - "20001"
+
+InActive - "90001"
+
+Cancelled - "90002"
+
+Withdrawn - "90003"
+
+OnHold - "90004"
